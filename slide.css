@@ -36,7 +36,7 @@ a{
     bottom:0;
 }
 .stContainer > input{
-   opacity: 0;
+   opacity: 0.0;
     z-index: 1;
 }
 .stContainer > a{
@@ -61,4 +61,23 @@ a{
 }
 #stControl5, #stControl5 + a {
     left:80%;
+}
+.stContainer > input:checked + a,
+.stContainer > input:checked:hover + a{
+    background-color: #821134;
+}
+.stContainer > input:checked + a:after{
+    content: "";
+    width:0;
+    height: 0;
+    overflow: hidden;
+    border: 20px solid transparent;
+    border-bottom-color:#821134;
+    position: absolute;
+    bottom:100%;
+    left: 50%;
+    margin-left:-20px;
+}
+.stContainer > input:hover + a{
+    background-color: #AD244F;
 }
