@@ -1,0 +1,64 @@
+body{
+    font-family: Georgia, serif;
+    background-color: #DDD;
+    font-weight: 400;
+    font-size:16px;
+    color:#333;
+    overflow:hidden;
+    -webkit-font-smoothing:antialiased;
+}
+a{
+    text-decoration:none;
+    color:#555;
+}
+
+.clr{
+    width:0;
+    height:0;
+    overflow:hidden;
+    clear:both;
+    padding:0;
+    margin: 0;
+}
+.stContainer{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    top:0;
+    left:0;
+    font-family: "Josefin Slab", "Myriad Pro";
+}
+.stContainer>input, .stContainer>a{
+    width:20%;
+    height: 34px;
+    line-height: 34px;
+    position: absolute;
+    bottom:0;
+}
+.stContainer > input{
+   opacity: 0;
+    z-index: 1;
+}
+.stContainer > a{
+    font-weight: 700;
+    font-size:18px;
+    background-color: #E23A6E;
+    text-align: center;
+    color:#FFF;
+    text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+}
+#stControl1, #stControl1 + a {
+    left:0;
+}
+#stControl2, #stControl2 + a {
+    left:20%;
+}
+#stControl3, #stControl3 + a {
+    left:40%;
+}
+#stControl4, #stControl4 + a {
+    left:60%;
+}
+#stControl5, #stControl5 + a {
+    left:80%;
+}
