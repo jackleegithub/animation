@@ -1,0 +1,1 @@
+border-width:{thin | medium | thick | length}

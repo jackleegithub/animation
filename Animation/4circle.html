@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>正圆运动效果</title>
+	<style type="text/css">
+		body {
+			background-color: #eaf0f2;
+		}
+		h1{
+			font-size: 14px;
+			font-family: "Microsoft Yahei";
+			text-align: center;
+		}
+		body{
+		  background:#000;
+		}
+		.stage{
+			width:800px;height:800px;margin: auto;border:1px solid rgba(255,255,255, 0.3);
+			background: #FFF url(sky.jpg) no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.rocketship{
+			position: absolute;left:-100px;top:25%;
+			transform-origin:500px center;
+			animation: fly 3s infinite linear;
+			
+		}
+		@keyframes fly{
+			/*form{transform:rotate(0);}*/
+			to{transform:rotate(1turn);}
+		}
+	</style>
+</head>
+<body>
+	<h1>正圆运动</h1>
+	<div class="stage">
+		<img class="rocketship" src="rocket.png"></div>
+	</div>
+
+</body>
+</html>

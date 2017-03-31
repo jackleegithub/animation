@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>鼠标hover特效</title>
+	<style type="text/css">
+		body{
+		  color: #fff;
+		  background:#000;
+		}
+		h1{
+			font-size: 14px;
+			font-family: "Microsoft Yahei";
+			text-align: center;
+		}
+		.sky{
+			display: block;
+			width:512px;
+			height:512px;
+			padding:10px;
+			margin: auto;
+			border: 5px solid #888;
+			background: url(moon.png) no-repeat;
+		}
+		.sky img{
+			transform: translate(-300px, -300px);
+			opacity: 0;
+			transition:  transform 1s ease,opacity 1s ease-out .2s;
+		}
+		.sky:hover img{
+			transform: translate(0, 0);
+			opacity: 1;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1>请使用webkit内核标准浏览器查看效果</h1>
+	<a href="#" class="sky" target="_blank">
+  		<img src="ChangE.png" alt="" />
+	</a>
+</body>
+</html>

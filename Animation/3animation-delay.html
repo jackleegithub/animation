@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>loading效果</title>
+	<style type="text/css">
+		body{
+		  color: #fff;
+		  background: #222;
+		}
+		h1{
+			font-size: 14px;
+			font-family: "Microsoft Yahei";
+			text-align: center;
+		}
+		.spinner{
+		  width:80px;
+		  height:50px;
+		  margin:100px auto;
+		  text-align:center;
+		}
+		@keyframes wave{
+			0%,40%,100%{
+				transform:scaleY(0.8);
+			}
+			20%{
+				transform:scaleY(2);
+			}
+		}
+		.spinner >div{
+			display:inline-block;
+			width:6px;
+			height:36px;
+			background-color:green;
+			animation:wave 1.2s infinite;
+		}
+		.spinner > div:first-child{
+			animation-delay: -1s;
+		}
+		.spinner > div:nth-child(2){
+			animation-delay: -0.8s;
+		}
+		.spinner > div:nth-child(3){
+			animation-delay: -0.6s;
+		}
+		.spinner > div:nth-child(4){
+			animation-delay: -0.4s;
+		}
+		.spinner > div:nth-child(5){
+			animation-delay: -0.2s;
+		}
+		@keyframes rotate{
+			from{
+				transform:rotate(0deg);
+			}
+			to{
+				transform:rotate(360deg);
+			}
+		}
+		.loading{
+			width:500px;
+			height:500px;
+			margin: auto;
+			border:50px solid rgba(255,255,255, .3);
+			border-left-color:#FFF;
+			border-radius: 50%;
+			animation: rotate 2s infinite linear;
+		}
+		.box{
+			width:0;height:0;margin:auto;
+			border:200px solid red;
+			border-right-color:green;
+			border-bottom-color:blue;
+			border-left-color:brown;
+			border-bottom-width:0;
+			border-left-width: 0;
+		}
+	</style>
+</head>
+<body>
+	<h1>请使用webkit内核标准浏览器查看效果</h1>
+	<div class="box"></div>
+	<div class="loading"></div>
+	<div class="spinner">
+	  <div class="line1"></div>
+	  <div class="line2"></div>
+	  <div class="line3"></div>
+	  <div class="line4"></div>
+	  <div class="line5"></div>
+	</div>
+</body>
+</html>

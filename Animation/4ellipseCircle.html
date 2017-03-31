@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>椭圆运动效果</title>
+	<style type="text/css">
+		body {
+			background-color: #eaf0f2;
+		}
+		h1{
+			font-size: 14px;
+			font-family: "Microsoft Yahei";
+			text-align: center;
+		}
+		body{
+		  background:#000;
+		}
+		@keyframes upDown{
+			
+			to{transform:translateY(200px);}
+		}
+		@keyframes airplaneFly{
+			to{transform:rotate(-1turn);}
+		}
+		.sky{
+			position: relative;
+			width:800px;height:800px;margin:100px auto;
+			animation:upDown 10s linear infinite alternate;
+			/*border:1px solid rgba(255,255,255, 0.5);*/
+		}
+		.sky img{
+			position: absolute;
+			top:0;left:calc(50% - 50px);
+			width:100px;
+			transform-origin:center 400px ;
+			animation: airplaneFly 20s infinite linear;
+		}
+	</style>
+</head>
+<body>
+	<h1>请使用webkit内核标准浏览器查看效果</h1>
+
+	<div class="sky">
+		<img src="airplane.png" alt="airplane" />
+	</div>
+
+</body>
+</html>
